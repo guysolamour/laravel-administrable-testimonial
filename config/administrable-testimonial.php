@@ -26,4 +26,7 @@ return [
             'testimonial' => \Guysolamour\Administrable\Extensions\Testimonial\Http\Controllers\Front\TestimonialController::class,
         ]
     ],
+    'filemanager' => false,
+    'dropzone'    => true,
+    'tinymce'     => false,
 ];

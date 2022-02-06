@@ -24,15 +24,10 @@
 
         <div class="card-body">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     @include('administrable-testimonial::' . Str::lower(config('administrable.back_namespace')) . '.testimonials._form', ['edit' => true])
                 </div>
-                <div class="col-md-4">
-                    @imagemanagerfront([
-                        'model'      => $form->getModel(),
-                        'label'      => 'Photo',
-                    ])
-                </div>
+               
             </div>
         </div>
     </div>

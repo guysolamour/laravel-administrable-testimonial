@@ -20,16 +20,10 @@
         </h4>
         <div class="card-body">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     @include('administrable-testimonial::' . Str::lower(config('administrable.back_namespace')) . '.testimonials._form')
                 </div>
-                <div class="col-md-4">
-                     @imagemanager([
-                        'collection' => 'front-image',
-                        'model'      => $form->getModel(),
-                        'label'      => 'Photo',
-                    ])
-                </div>
+               
             </div>
         </div>
     </div>

@@ -93,7 +93,7 @@ class TestimonialController extends BaseController
      */
     public function update(Request $request, string $slug)
     {
-        $testimonial = config('administrable.extensions.testimonial.model')::where('slug', $slug)->firstOrFail();
+        $testimonial = config('administrable-testimonial.models.testimonial')::where('slug', $slug)->firstOrFail();
 
         $form = $this->getForm($testimonial, config('administrable-testimonial.forms.back.testimonial'));
 
@@ -114,7 +114,7 @@ class TestimonialController extends BaseController
      */
     public function destroy(string $slug)
     {
-        $testimonial = config('administrable.extensions.testimonial.model')::where('slug', $slug)->firstOrFail();
+        $testimonial = config('administrable-testimonial.models.testimonial')::where('slug', $slug)->firstOrFail();
 
         $testimonial->delete();
 

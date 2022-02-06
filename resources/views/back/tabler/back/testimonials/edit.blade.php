@@ -30,14 +30,8 @@
             {{ Lang::get('administrable-testimonial::translations.default.edition') }}
         </h3>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 @include('administrable-testimonial::' . Str::lower(config('administrable.back_namespace')) . '.testimonials._form', ['edit' => true])
-            </div>
-            <div class="col-md-4">
-                @imagemanagerfront([
-                    'label'      => 'Photo',
-                    'model'      => $form->getModel(),
-                ])
             </div>
         </div>
     </div>
