@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::name(Str::lower(config('administrable.front_namespace') . '.'))->middleware('web')->group(function (){
+Route::name(Str::lower(config('administrable.front_namespace') . '.'))->middleware('web')->group(function () {
     /*
     |--------------------------------------------------------------------------
     | EXTENSIONS -> Testimonial
